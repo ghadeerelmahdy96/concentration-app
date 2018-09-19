@@ -13,6 +13,8 @@
 		424EDDEB2124330D007B4D10 /* concentration_app.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 424EDDE92124330D007B4D10 /* concentration_app.xcdatamodeld */; };
 		424EDDED2124330D007B4D10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 424EDDEC2124330D007B4D10 /* Assets.xcassets */; };
 		424EDDF02124330D007B4D10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 424EDDEE2124330D007B4D10 /* LaunchScreen.storyboard */; };
+		42618A62213B263C005830C9 /* concentration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42618A61213B263C005830C9 /* concentration.swift */; };
+		42E66AE72134D1C400527AEC /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E66AE62134D1C400527AEC /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		424EDDEC2124330D007B4D10 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		424EDDEF2124330D007B4D10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		424EDDF12124330D007B4D10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42618A61213B263C005830C9 /* concentration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = concentration.swift; sourceTree = "<group>"; };
+		42E66AE62134D1C400527AEC /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				424EDDE12124330D007B4D10 /* concentration app */,
+				42E66AE52134D16100527AEC /* controls */,
 				424EDDE02124330D007B4D10 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -56,15 +61,24 @@
 		424EDDE12124330D007B4D10 /* concentration app */ = {
 			isa = PBXGroup;
 			children = (
-				424EDDE22124330D007B4D10 /* AppDelegate.swift */,
 				424EDDE42124330D007B4D10 /* ViewController.swift */,
+				42E66AE62134D1C400527AEC /* Card.swift */,
+				42618A61213B263C005830C9 /* concentration.swift */,
 				424EDDE62124330D007B4D10 /* Main.storyboard */,
-				424EDDEC2124330D007B4D10 /* Assets.xcassets */,
 				424EDDEE2124330D007B4D10 /* LaunchScreen.storyboard */,
+			);
+			path = "concentration app";
+			sourceTree = "<group>";
+		};
+		42E66AE52134D16100527AEC /* controls */ = {
+			isa = PBXGroup;
+			children = (
+				424EDDE22124330D007B4D10 /* AppDelegate.swift */,
+				424EDDEC2124330D007B4D10 /* Assets.xcassets */,
 				424EDDF12124330D007B4D10 /* Info.plist */,
 				424EDDE92124330D007B4D10 /* concentration_app.xcdatamodeld */,
 			);
-			path = "concentration app";
+			path = controls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				424EDDE52124330D007B4D10 /* ViewController.swift in Sources */,
+				42E66AE72134D1C400527AEC /* Card.swift in Sources */,
+				42618A62213B263C005830C9 /* concentration.swift in Sources */,
 				424EDDEB2124330D007B4D10 /* concentration_app.xcdatamodeld in Sources */,
 				424EDDE32124330D007B4D10 /* AppDelegate.swift in Sources */,
 			);
@@ -280,7 +296,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HQGQ663PG7;
-				INFOPLIST_FILE = "concentration app/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/controls/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ghadeerelmahdy.concentration-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -295,7 +311,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HQGQ663PG7;
-				INFOPLIST_FILE = "concentration app/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/controls/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ghadeerelmahdy.concentration-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";

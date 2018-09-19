@@ -7,3 +7,24 @@
 //
 
 import Foundation
+struct Card{
+    var isFaceUp = false
+    var isMatched = false
+    var indentifier : Int
+//    init (indentifier: Int){
+//        self.indentifier = indentifier
+//
+//    }
+    static private var identifierFactory = 0
+    
+    static private func getUniqueIdentifier() -> Int {
+        identifierFactory += 1
+        return identifierFactory
+    }
+    
+    init() {
+        self.indentifier = Card.getUniqueIdentifier()
+    }
+  
+    
+}
